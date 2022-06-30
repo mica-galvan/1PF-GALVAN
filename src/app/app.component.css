@@ -1,13 +1,16 @@
 .item1 { grid-area: toolbar; }
 .item2 { grid-area: navbar; }
 .item3 { grid-area: main; }
+.item4 { grid-area: list; }
 
 
 .grid-layout-container {
   display: grid;
   grid-template-areas:
     'toolbar toolbar toolbar toolbar toolbar toolbar'
-    'navbar navbar main main main main ';
+    'navbar navbar main main main main '
+    'navbar navbar list list list list ';
+
   
   background-color: #d4b8cb;
   ;
