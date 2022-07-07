@@ -2,6 +2,7 @@
 .item2 { grid-area: navbar; }
 .item3 { grid-area: main; }
 .item4 { grid-area: list; }
+.item5 { grid-area: form; }
 
 
 .grid-layout-container {
@@ -9,17 +10,18 @@
   grid-template-areas:
     'toolbar toolbar toolbar toolbar toolbar toolbar'
     'navbar navbar main main main main '
-    'navbar navbar list list list list ';
+    'navbar navbar form form list list '
+     ;
 
   
-  background-color: #d4b8cb;
+  background-color: white;
   ;
 }
 
 .grid-layout-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
+  padding:  0;
   font-size: 30px;
 }
 

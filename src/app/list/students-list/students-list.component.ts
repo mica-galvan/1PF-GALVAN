@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from "@angular/forms";
 
 @Component({
   selector: 'app-students-list',
@@ -15,6 +16,8 @@ export class StudentsListComponent implements OnInit {
     {nombre: 'Federico Gonzalez'},
     {nombre: 'Mario Lopez'},
   ]
+  status: boolean = false;
+
 
   constructor() { }
 

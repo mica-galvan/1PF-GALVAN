@@ -1,3 +1,19 @@
 .nav-top{
     margin-top: 0;
+    margin-right: 0;
+    background-color: rgb(39, 39, 41) !important;
+}
+ ul {
+    padding-left: 50%;
+ }
+
+a{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+ul a:hover{
+    font-size: 17px;
+    border-bottom: solid 2px pink;
 }

@@ -9,9 +9,9 @@ export class StudentsListDirective {
     private element: ElementRef,
     private renderer: Renderer2,
   ){
-    renderer.setStyle(element.nativeElement, 'fontSize','20px')
-    renderer.setStyle(element.nativeElement, 'color','fuchsia')
-    renderer.setStyle(element.nativeElement, 'border','2px solid white')
+    renderer.setStyle(element.nativeElement, 'fontSize','18px')
+    renderer.setStyle(element.nativeElement, 'color','grey')
+    renderer.setStyle(element.nativeElement, 'border','2px solid pink')
   }
 
 }

@@ -8,6 +8,9 @@ import { ToolbarComponent } from './modulos/toolbar/toolbar.component';
 import { MainComponent } from './modulos/main/main.component';
 import { StudentsListDirective } from './list/students-list.directive';
 import { StudentsListComponent } from './list/students-list/students-list.component';
+import { ContactFormComponent } from './modulos/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { StudentsListComponent } from './list/students-list/students-list.compon
     ToolbarComponent,
     MainComponent,
     StudentsListDirective,
-    StudentsListComponent
+    StudentsListComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

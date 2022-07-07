@@ -1,3 +1,27 @@
 li{
 list-style: none;
 }
+ul{
+    margin-top: 15px;
+    margin-right: 80px;
+}
+
+h3{
+    margin-right: 30px !important;
+    color: rgb(199, 149, 149);
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-see{
+    background-color: rgb(253, 170, 184);
+    color: black;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-see:hover{
+    background-color: rgb(212, 44, 100);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,39 @@
+<div class="container  ml-5 bg-form">
+    <h5 class="text-form" >SOPORTE</h5> <small>(Al enviar se ven los datos por consola)</small>
+    <form [formGroup]="contactForm" class="m-3 col-lg-6 text-center">
+    <div class="form-group">
+     <!-- <label for="name">Nombre</label> -->
+     <input placeholder="Nombre" type="text" id="name" formControlName="name" class="form-control estilo-form " required minlength="4">
+     <span *ngIf="contactForm.get('name')?.errors?.['required']" class=" msj-error"> *Este campo es obligatorio </span>
+     <span *ngIf="contactForm.get('name')?.errors?.['minlength']" class="msj-error">Debe tener 3 o más caracteres
+    </span>
+
+
+     
+    </div>
+    
+    <div class="form-group">
+     <!-- <label for="lastname">Apellido</label> -->
+     <input placeholder="Apellido" type="text" id="lastname" formControlName="lastname"class="form-control estilo-form ">
+     <span *ngIf="contactForm.get('lastname')?.errors?.['required']" class=" msj-error"> *Este campo es obligatorio </span> <span *ngIf="contactForm.get('lastname')?.errors?.['minlength']" class="msj-error">Debe tener 3 o más caracteres
+    </span>
+    </div>
+    <div class="form-group">
+        <!-- <label for="email">Email</label> -->
+        <input placeholder="Correo electrónico" type="email" id="email" formControlName="email" class="form-control estilo-form">
+        <span *ngIf="contactForm.get('email')?.errors?.['required']" class=" msj-error"> *Este campo es obligatorio </span> <span *ngIf="contactForm.get('email')?.errors?.['email']" class="msj-error">Ingrese un correo válido
+        </span>
+         </div>
+    <div class="form-group">
+        <!-- <label for="subject">Asunto</label> -->
+        <textarea placeholder="Asunto (max. 300 caracteres)" type="subject" id="subject" formControlName="subject" class="form-control estilo-form-t"></textarea>
+         <span *ngIf="contactForm.get('subject')?.errors?.['maxlength']" class="msj-error">Máximo caracteres permitidos
+        </span>
+        
+         </div>
+
+         <button type="reset" (click)="guardar()" class="btn btn-save">ENVIAR</button>
+      </form>
+</div>
+
+

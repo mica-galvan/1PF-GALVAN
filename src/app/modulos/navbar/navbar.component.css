@@ -1,3 +1,21 @@
 .sidebar{
-height: 100%;
+height: 100% !important;
+background-color: rgb(39, 39, 41) !important;
+}
+
+.welcome{
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+a{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+ul a:hover{
+    font-size: 17px;
+   background-color:  pink;
+   color: black!important;
 }
