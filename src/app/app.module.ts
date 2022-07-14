@@ -10,6 +10,13 @@ import { StudentsListDirective } from './list/students-list.directive';
 import { StudentsListComponent } from './list/students-list/students-list.component';
 import { ContactFormComponent } from './modulos/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { CrudComponent } from './modulos/crud/crud.component';
+import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatInputModule} from '@angular/material/input'
+import { MatTableModule } from '@angular/material/table' 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -21,11 +28,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     StudentsListDirective,
     StudentsListComponent,
     ContactFormComponent,
+    CrudComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
     
   ],
   providers: [],

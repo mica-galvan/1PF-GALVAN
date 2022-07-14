@@ -2,16 +2,18 @@
 .item2 { grid-area: navbar; }
 .item3 { grid-area: main; }
 .item4 { grid-area: list; }
-.item5 { grid-area: form; }
+.item5 { grid-area: crud; }
+.item6 { grid-area: form; }
 
 
 .grid-layout-container {
   display: grid;
   grid-template-areas:
     'toolbar toolbar toolbar toolbar toolbar toolbar'
-    'navbar navbar main main main main '
-    'navbar navbar form form list list '
-     ;
+    /*'navbar navbar main main main main '*/
+    'navbar navbar crud crud form form '
+    /*'navbar navbar list list list list '*/
+    ;
 
   
   background-color: white;

@@ -1,0 +1,61 @@
+.bg-form{
+    width: 500px;
+    height: 500px;
+    padding-top: 30px ;
+    margin-bottom: 50px;
+    }
+
+    h5{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: blueviolet;
+    }
+    
+    .text-form{
+        margin-right: 30px !important;
+        color: rgb(199, 149, 149);
+        font-size: 25px;
+    }
+    .msj-error{
+        width: 200px !important;
+        height: 10px !important;
+        font-size: 12px;
+        color: rgb(255, 0, 0);
+        margin-top: 0!important;
+        
+    }
+    .estilo-form{
+        width: 400px;
+        background-color: rgb(234, 225, 255)!important;
+        border: none !important;
+    }
+    .estilo-li{
+        width: 400px;
+        font-size: 15px !important;
+        background-color: rgb(178, 215, 230);
+        border: 1px rgb(36, 31, 31) solid;
+    }
+    .li-w{
+        width: 500px;
+    }
+    .estilo-form-t{
+        width: 380px;
+        font-size: 14px !important;
+        background-color: rgb(234, 225, 255)!important;
+        
+        border: none !important;
+        height: 150px;
+    }
+    .btn-save{
+        background-color: rgb(218, 166, 253);
+        color: black;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btn-save:hover{
+        background-color: rgb(215, 126, 250);
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
