@@ -16,6 +16,7 @@ import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input'
 import { MatTableModule } from '@angular/material/table' 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoursesComponent } from './modulos/courses/courses.component';
 
 
 
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StudentsListComponent,
     ContactFormComponent,
     CrudComponent,
+    CoursesComponent,
     
   ],
   imports: [
