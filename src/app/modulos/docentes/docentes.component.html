@@ -1,0 +1,4 @@
+<div>
+    <h2>Docentes</h2>
+    <ul><span *ngFor="let docente of (pOS.docentes$ | async)"><li *ngIf="docente.hair_color != 'n/a'">{{docente.name}}</li></span></ul>
+</div>

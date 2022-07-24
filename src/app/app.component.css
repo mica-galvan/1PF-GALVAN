@@ -4,6 +4,8 @@
 .item4 { grid-area: list; }
 .item5 { grid-area: crud; }
 .item6 { grid-area: form; }
+.item7 { grid-area: docente; }
+.item8 { grid-area: tutor; }
 
 
 .grid-layout-container {
@@ -11,7 +13,8 @@
   grid-template-areas:
     'toolbar toolbar toolbar toolbar toolbar toolbar'
     /*'navbar navbar main main main main '*/
-    'navbar navbar crud crud form form '
+    /* 'navbar navbar crud crud form form ' */
+    'navbar navbar docente tutor tutor tutor'
     /*'navbar navbar list list list list '*/
     ;
 

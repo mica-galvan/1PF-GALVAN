@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './modulos/navbar/navbar.component';
@@ -17,8 +16,9 @@ import {MatInputModule} from '@angular/material/input'
 import { MatTableModule } from '@angular/material/table' 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoursesComponent } from './modulos/courses/courses.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { DocentesComponent } from './modulos/docentes/docentes.component';
+import { TutoresComponent } from './modulos/tutores/tutores.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { CoursesComponent } from './modulos/courses/courses.component';
     ContactFormComponent,
     CrudComponent,
     CoursesComponent,
-    
+    DocentesComponent,
+    TutoresComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,7 @@ import { CoursesComponent } from './modulos/courses/courses.component';
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
