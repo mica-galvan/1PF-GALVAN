@@ -1,6 +1,8 @@
 <div>
-    <h2>Tutores</h2>
+    <h2>Tutores de SWAPI</h2>
+    <h2 class="" > Para ver los tutores disponibles en API SWAPI <button #btnClick type="button" (click)="null">haz click</button> </h2>
+ 
     <ul>
-    <li *ngFor="let tutor of tutores">{{tutor.name}}</li>
+    <li *ngFor="let tutor of tutores" class="list">{{tutor.name}}</li>
     </ul>  
 </div>

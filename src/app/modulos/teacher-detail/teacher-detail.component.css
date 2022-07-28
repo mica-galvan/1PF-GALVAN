@@ -1,0 +1,19 @@
+.labels{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: violet;
+    background-color: rgba(172, 255, 255, 0.322);
+    margin-left: 20px;
+}
+.data{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(159, 130, 238);
+}
+.label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(37, 3, 37);
+    
+    
+}

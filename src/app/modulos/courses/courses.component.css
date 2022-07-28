@@ -1,0 +1,12 @@
+ul li{
+    list-style: none;
+    height: 90%;
+}
+h3{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}

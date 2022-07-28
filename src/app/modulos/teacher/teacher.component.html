@@ -1,0 +1,19 @@
+<h2>Profesores</h2>
+<div class="grid-layout-container">
+<div class="detail">
+    <app-teacher-detail [teacher]="selectedTeacher" ></app-teacher-detail>
+</div>
+<div class="list">
+    <ul class="teachers">
+  <li *ngFor="let teacher of teachers"
+    [class.selected]="teacher === selectedTeacher"
+    (click)="onSelect(teacher)">
+    <span class="badge">{{teacher.id}}</span> {{teacher.name}}
+  </li>
+</ul>
+</div>
+</div>
+
+
+
+ <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->

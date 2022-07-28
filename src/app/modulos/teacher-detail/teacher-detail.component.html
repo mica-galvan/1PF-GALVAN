@@ -1,0 +1,10 @@
+<div *ngIf="teacher">
+    <h2>EDITAR DATOS</h2>
+    <h2 class="data">{{teacher.name}}</h2>
+    <div class="label"><span class="labels"> Curso </span > <span>  </span> {{teacher.id}}</div>
+    <div>
+      <label class="labels">Nombre Completo:
+        <input type="text" placeholder="name" [(ngModel)]="teacher.name"  />
+      </label>
+    </div>
+  </div>

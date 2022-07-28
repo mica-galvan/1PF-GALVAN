@@ -12,9 +12,11 @@
   display: grid;
   grid-template-areas:
     'toolbar toolbar toolbar toolbar toolbar toolbar'
-    /*'navbar navbar main main main main '*/
+    'navbar navbar main main main main '
+    'navbar navbar main main main main '
+    'footer footer footer footer footer footer '
     /* 'navbar navbar crud crud form form ' */
-    'navbar navbar docente tutor tutor tutor'
+    /*'navbar navbar docente tutor tutor tutor'
     /*'navbar navbar list list list list '*/
     ;
 
@@ -34,3 +36,25 @@ a:link, a:visited, a:active{
    
     text-decoration: none !important;
 }
+
+.sidebar{
+  height: 100vh!important;
+  background-color: rgb(39, 39, 41) !important;
+  }
+  
+  .welcome{
+      font-size: 18px;
+      margin-left: 15px;
+  
+  }
+  a{
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+  ul a:hover{
+      font-size: 17px;
+     background-color:  pink;
+     color: black!important;
+  }

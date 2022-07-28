@@ -1,26 +1,24 @@
 <div class="container  bg-form">
     <div class="row">
         <div class="col">
-          <h5 class="text-center ">ABM admin</h5>
-          <small class="text-muted">(Seleccionando un alumno, se puede editar y volver a cargar o eliminar)</small>
+            <h5 class="text-center ">ABM admin</h5>
+            <small class="text-muted">(Seleccionando un alumno, se puede editar y volver a cargar o eliminar)</small>
             <div class="card mt-4">
                 <div class="card-body">
                     <div class="mt-2 card-title">
                         Listado de Alumnos
                     </div>
-                <ul class="list-group">
-                    <li 
-                    *ngFor=" let alumno of AlumnoList"
-                    class="list-group-item list-group-item-action estilo-li"
-                    (click)="Edit(alumno)"
-                    [class.active]="alumno == alumnoSelected"
-                    >
-                    <!-- <span class="badge badge-primary">{{alumno.id}}</span> -->
-                   Nombre: {{alumno.name}} | Curso: {{alumno.course}}</li>
-                </ul>
-                </div> </div>
-              
-             
+                    <ul class="list-group">
+                        <li *ngFor=" let alumno of AlumnoList" class="list-group-item list-group-item-action estilo-li"
+                            (click)="Edit(alumno)" [class.active]="alumno == alumnoSelected">
+                            <!-- <span class="badge badge-primary">{{alumno.id}}</span> -->
+                            Nombre: {{alumno.name}} | Curso: {{alumno.course}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
 
 
             <div class="card mt-4">
@@ -28,29 +26,37 @@
                     <div class="mt-2 card-title">
                         Ingrese un nuevo alumno
                     </div>
-                    <form [formGroup]="abmForm" class=" mt-3 text-center">
-                    <div class="form-group">
-                        <input type="text" 
-                        formControlName="name"
-                        [(ngModel)]="alumnoSelected.name"
-                        placeholder="Ingrese Nombre" class="form-control estilo-form"required minlength="4">
-                        <span *ngIf="abmForm.get('name')?.errors?.['required']" class=" msj-error"> *Este campo es obligatorio </span>
-                        <span *ngIf="abmForm.get('name')?.errors?.['minlength']" class="msj-error">Debe tener 3 o más caracteres
-                       </span>
-                    </div>
-                       <div class="form-group ">
-                        <input type="text" 
-                        formControlName="course"
-                        [(ngModel)]="alumnoSelected.course"
-                        placeholder="Ingrese Curso" class="form-control estilo-form ">
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-save m-2" (click)="addOrEdit()">Cargar / Editar</button>
-                        <button 
-                        *ngIf="alumnoSelected.id !== 0"
-                        class="btn btn-danger m-2" (click)="delete()">Eliminar</button>
-                    </div>
+                    <form [formGroup]="abmForm"  class=" mt-3 text-center">
                         
+                        <div class="form-group">
+                             <input type="text" formControlName="name" [(ngModel)]="alumnoSelected.name"
+                                placeholder="Ingrese Nombre" class="form-control estilo-form" required minlength="3">
+
+                             <span *ngIf="abmForm.get('name')?.errors?.['minlength']" class="msj-error">Debe tener 3 o más caracteres </span>  
+                                
+                        <div class="form-group ">
+
+                            <input  type="text" formControlName="course" [(ngModel)]="alumnoSelected.course" 
+                                placeholder="Ingrese código del curso" class="form-control estilo-form mt-4"
+                                required minlength="1">
+
+                                <span *ngIf="abmForm.get('course')?.errors?.['minlength']"
+                                class="msj-error">Debe tener 2 o más caracteres
+                                </span>
+
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-save m-2"
+                            [disabled]="abmForm.invalid"
+                             (click)="addOrEdit()">Cargar / Editar</button>
+                            <button *ngIf="alumnoSelected.id !== 0" class="btn btn-danger m-2"
+                                (click)="delete()">Eliminar</button>
+                        </div>
+                        
+                    </div>
+                             
+
                     </form>
                 </div>
 

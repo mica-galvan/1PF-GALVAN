@@ -1,0 +1,65 @@
+.item1 { grid-area: list; }
+.item2 { grid-area: detail; }
+
+.grid-layout-container {
+  display: grid;
+  grid-template-areas:
+    
+    ' list list void detail detail '
+    ' list list void detail detail '
+    
+    ;
+
+  
+  background-color: white;
+  ;
+}
+
+
+.teachers {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .teachers li {
+    color: #EEE;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(200, 117, 255);
+    margin: .5em;
+    padding: .3em 0;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .teachers li:hover {
+    color: #6affcd;
+    background-color: rgb(215, 29, 221);
+    left: .1em;
+  }
+  .teachers li.selected {
+    background-color: #a200ff;
+    color: rgb(106, 255, 6);
+  }
+  .teachers li.selected:hover {
+    background-color: #d89dff;
+    color: white;
+  }
+  .teachers .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#bbff4e;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 40px;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+
+

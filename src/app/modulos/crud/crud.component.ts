@@ -17,9 +17,9 @@ export class CrudComponent implements OnInit {
 
    AlumnoList: Alumno[] = 
     [
-      { id: 1, name:'Micaela Galvan', course:'Angular' }, 
-      { id: 2, name:'Yanina Torres', course:'React' },
-      { id: 3, name:'Sofia Alan', course:'JavaScript' }
+      { id: 1, name:'Tamara Aguirre', course:'DW' }, 
+      { id: 2, name:'Yanina Torres', course:'AI' },
+      { id: 3, name:'Sofia Alan', course:'VW' }
     ]
   
 
@@ -53,7 +53,7 @@ export class CrudComponent implements OnInit {
     this.abmForm = this._formBuilder.group({
      
       name: ['', [Validators.required, Validators.minLength(3)]],
-      course  : ['',[Validators.required, Validators.minLength(3)]],
+      course  : ['',[Validators.required, Validators.minLength(2)]],
 
       
      });
